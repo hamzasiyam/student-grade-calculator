@@ -37,8 +37,7 @@ The **Student Grade Calculator** is a modular command-line application that:
 
 ### Technology Choices
 
-- **Python 3.7+**: Chosen for readability, rapid development, and built-in type hints for maintainability.
-- **Modular design**: Logic is split into `input_utils`, `calculations`, and `display` modules to separate concerns and improve testability.
+- **Python 3.7+**
 - **Standard library only**: No external dependencies—keeps the project lightweight and easy to run anywhere Python is installed.
 
 ### Challenges Solved
@@ -54,7 +53,7 @@ The **Student Grade Calculator** is a modular command-line application that:
 
 ### Prerequisites
 
-- **Python 3.7 or higher** (for type hint support)
+- **Python 3.7 or higher**
 
 Check your Python version:
 
@@ -183,8 +182,6 @@ See [PROGRAM_FLOW_DIAGRAM.md](PROGRAM_FLOW_DIAGRAM.md) for detailed flow diagram
         └───────────────┘ └───────────────┘ └───────────────┘
 ```
 
-
-
 **Detailed Program Flow (Mermaid)**
 
 ```mermaid
@@ -219,8 +216,6 @@ flowchart LR
 
 
 
-
-
 ## Contributing
 
 Contributions are welcome. To contribute:
@@ -243,7 +238,7 @@ Contributions are welcome. To contribute:
 ---
 
 ## Statement of AI Use
- 
+
 I use generative AI to accelerate my coding, but strictly maintain a "human in the loop" to ensure accountability and accuracy. Because AI is not a substitute for foundational programming knowledge and can produce confident errors (hallucinations), I actively apply my expertise to debug and refine all automated suggestions.
 
 I am also highly vigilant against AI bias, recognizing that machine learning models can easily absorb and amplify historical inequalities. To build fair applications, I critically evaluate my algorithms and avoid flawed proxies—*using an easily measurable but misleading metric to represent a complex reality, much like using a person's zip code to judge their financial reliability*. By recognizing these limitations, I ensure incomplete data does not unfairly penalize vulnerable groups. Ultimately, the responsibility for the code rests entirely with me.

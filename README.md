@@ -5,23 +5,6 @@
 
 A command-line Python application that computes the average of three test scores per student and the overall class average for one or more students in a single session.
 
----
-
-## Table of Contents
-
-- [Project Description](#project-description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Diagrams](#diagrams)
-- [Contributing](#contributing)
-- [Credits](#credits)
-- [Statement of AI Use](#statement-of-ai-use)
-- [License](#license)
-- [References & Acknowledgements](#references--acknowledgements)
-
----
-
 ## Project Description
 
 ### What It Does

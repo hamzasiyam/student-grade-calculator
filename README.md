@@ -131,12 +131,9 @@ student-grade-calculator/
 │   ├── input_utils.py      # Input handling (names, ID, scores, continue choice)
 │   ├── calculations.py     # Student and class average computations
 │   └── display.py          # Output formatting and printing
-├── PROGRAM_FLOW_DIAGRAM.md # Flow diagrams and module structure
 ├── .gitignore              # Git ignore rules
 └── README.md               # This file
 ```
-
-See [PROGRAM_FLOW_DIAGRAM.md](PROGRAM_FLOW_DIAGRAM.md) for detailed flow diagrams and data flow between modules.
 
 ---
 
@@ -196,6 +193,19 @@ flowchart LR
     Continue -->|No| PrintSummary[print_summary]
     PrintSummary --> End([End])
 ```
+
+### Data Flow Between Modules
+
+| Step | Module                | Function                  | Input                  | Output                   |
+|------|-----------------------|---------------------------|------------------------|--------------------------|
+| 1    | `modules.input_utils` | `get_student_name()`      | (user input)           | first_name, middle, last |
+| 2    | `modules.input_utils` | `get_student_id()`        | (user input)           | student_id               |
+| 3    | `modules.input_utils` | `get_validated_score(n)`  | prompt number          | score (0–100)            |
+| 4    | `modules.calculations`| `calculate_student_average` | score1, score2, score3 | total, average           |
+| 5    | `modules.display`     | `print_student_info()`    | all student data       | (prints to console)      |
+| 6    | `modules.calculations`| `calculate_class_average` | total_averages, count  | class_average            |
+| 7    | `modules.input_utils` | `get_continue_choice()`   | (user input)           | True/False               |
+| 8    | `modules.display`     | `print_summary()`         | count, class_average   | (prints to console)      |
 
 
 

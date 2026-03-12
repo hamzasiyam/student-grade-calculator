@@ -39,7 +39,6 @@ The **Student Grade Calculator** is a modular command-line application that:
 
 - **Python 3.7+**: Chosen for readability, rapid development, and built-in type hints for maintainability.
 - **Modular design**: Logic is split into `input_utils`, `calculations`, and `display` modules to separate concerns and improve testability.
-- **Type hints**: Used throughout for clearer interfaces and better IDE support.
 - **Standard library only**: No external dependencies—keeps the project lightweight and easy to run anywhere Python is installed.
 
 ### Challenges Solved
@@ -70,7 +69,7 @@ python3 --version
 1. **Clone or download** the repository:
   ```bash
    git clone <repository-url>
-   cd calculate
+   cd student-grade-calculator
   ```
 2. **No external dependencies** are required. The project uses only the Python standard library.
 3. **Optional but recommended**: Create and activate a virtual environment:
@@ -160,8 +159,7 @@ See [PROGRAM_FLOW_DIAGRAM.md](PROGRAM_FLOW_DIAGRAM.md) for detailed flow diagram
 
 ## Diagrams
 
-<details>
-  <summary><strong>High-Level Module Structure</strong></summary>
+**High-Level Module Structure**
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -184,10 +182,9 @@ See [PROGRAM_FLOW_DIAGRAM.md](PROGRAM_FLOW_DIAGRAM.md) for detailed flow diagram
         └───────────────┘ └───────────────┘ └───────────────┘
 ```
 
-</details>
 
-<details>
-  <summary><strong>Detailed Program Flow (Mermaid)</strong></summary>
+
+**Detailed Program Flow (Mermaid)**
 
 ```mermaid
 flowchart LR
@@ -219,7 +216,9 @@ flowchart LR
     PrintSummary --> End([End])
 ```
 
-</details>
+
+
+
 
 ## Contributing
 
@@ -238,15 +237,15 @@ Contributions are welcome. To contribute:
 
 ## Credits
 
-
-
 - **Author**: Hamza Siyam
 
 ---
 
 ## Statement of AI Use
 
-In developing the software for this repository, I leverage generative AI as a powerful accelerator for coding, but I strictly maintain a "human in the loop" approach to ensure accountability and accuracy. While AI can rapidly generate scripts and frameworks, it is not a replacement for foundational programming knowledge and can produce confident but incorrect outputs known as hallucinations; therefore, I actively apply my own technical expertise to debug, evaluate, and refine all automated suggestions. Furthermore, I remain highly vigilant against AI bias, recognizing that machine learning models learn from massive historical datasets and can easily absorb and amplify existing explicit or unconscious societal inequalities. To build fair and equitable applications, I critically evaluate the algorithms I use and actively avoid the reliance on flawed proxies—such as the real-world healthcare algorithm that erroneously used medical spending as a proxy for actual illness, inadvertently discriminating against Black patients who had historically lower spending due to systemic access issues. By remaining aware of these limitations, I ensure that incomplete quantitative data does not unfairly penalize vulnerable demographic groups and that the ultimate responsibility for my code remains with me.
+In developing the software for this repository, I leverage generative AI as a powerful accelerator for coding, but I strictly maintain a "human in the loop" approach to ensure accountability and accuracy. While AI can rapidly generate scripts and frameworks, it is not a replacement for foundational programming knowledge and can produce confident but incorrect outputs known as hallucinations; therefore, I actively apply my own technical expertise to debug, evaluate, and refine all automated suggestions. Furthermore, I remain highly vigilant against AI bias, recognizing that machine learning models learn from massive historical datasets and can easily absorb and amplify existing explicit or unconscious societal inequalities.
+
+To build fair and equitable applications, I critically evaluate the algorithms I use and actively avoid the reliance on flawed proxies—such as the real-world healthcare algorithm that erroneously used medical spending as a proxy for actual illness, inadvertently discriminating against Black patients who had historically lower spending due to systemic access issues. By remaining aware of these limitations, I ensure that incomplete quantitative data does not unfairly penalize vulnerable demographic groups and that the ultimate responsibility for my code remains with me.
 
 *This statement was informed by the [Certificate in Artificial Intelligence and Career Empowerment](https://www.rhsmith.umd.edu/programs/executive-education/learning-opportunities-individuals/free-online-certificate-artificial-intelligence-and-career-empowerment) from the University of Maryland Robert H. Smith School of Business. See [References & Acknowledgements](#references--acknowledgements) for the full resource link.*
 

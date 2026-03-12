@@ -143,11 +143,12 @@ Class Average= 85.00
 ## Project Structure
 
 ```
-calculate/
+student-grade-calculator/
 ├── main.py                 # Entry point; orchestrates the program flow
-├── input_utils.py          # Input handling (names, ID, scores, continue choice)
-├── calculations.py         # Student and class average computations
-├── display.py              # Output formatting and printing
+├── modules/                # Package containing modular helper programs
+│   ├── input_utils.py      # Input handling (names, ID, scores, continue choice)
+│   ├── calculations.py     # Student and class average computations
+│   └── display.py          # Output formatting and printing
 ├── PROGRAM_FLOW_DIAGRAM.md # Flow diagrams and module structure
 ├── .gitignore              # Git ignore rules
 └── README.md               # This file
@@ -242,10 +243,10 @@ Contributions are welcome. To contribute:
 ---
 
 ## Statement of AI Use
+ 
+I use generative AI to accelerate my coding, but strictly maintain a "human in the loop" to ensure accountability and accuracy. Because AI is not a substitute for foundational programming knowledge and can produce confident errors (hallucinations), I actively apply my expertise to debug and refine all automated suggestions.
 
-In developing the software for this repository, I leverage generative AI as a powerful accelerator for coding, but I strictly maintain a "human in the loop" approach to ensure accountability and accuracy. While AI can rapidly generate scripts and frameworks, it is not a replacement for foundational programming knowledge and can produce confident but incorrect outputs known as hallucinations; therefore, I actively apply my own technical expertise to debug, evaluate, and refine all automated suggestions. Furthermore, I remain highly vigilant against AI bias, recognizing that machine learning models learn from massive historical datasets and can easily absorb and amplify existing explicit or unconscious societal inequalities.
-
-To build fair and equitable applications, I critically evaluate the algorithms I use and actively avoid the reliance on flawed proxies—such as the real-world healthcare algorithm that erroneously used medical spending as a proxy for actual illness, inadvertently discriminating against Black patients who had historically lower spending due to systemic access issues. By remaining aware of these limitations, I ensure that incomplete quantitative data does not unfairly penalize vulnerable demographic groups and that the ultimate responsibility for my code remains with me.
+I am also highly vigilant against AI bias, recognizing that machine learning models can easily absorb and amplify historical inequalities. To build fair applications, I critically evaluate my algorithms and avoid flawed proxies—*using an easily measurable but misleading metric to represent a complex reality, much like using a person's zip code to judge their financial reliability*. By recognizing these limitations, I ensure incomplete data does not unfairly penalize vulnerable groups. Ultimately, the responsibility for the code rests entirely with me.
 
 *This statement was informed by the [Certificate in Artificial Intelligence and Career Empowerment](https://www.rhsmith.umd.edu/programs/executive-education/learning-opportunities-individuals/free-online-certificate-artificial-intelligence-and-career-empowerment) from the University of Maryland Robert H. Smith School of Business. See [References & Acknowledgements](#references--acknowledgements) for the full resource link.*
 

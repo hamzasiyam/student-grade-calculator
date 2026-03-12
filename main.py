@@ -12,14 +12,14 @@ optionally continue with another student.
 Author: Hamza Siyam
 """
 
-from input_utils import (
+from modules.input_utils import (
     get_student_name,
     get_student_id,
     get_validated_score,
     get_continue_choice,
 )
-from calculations import calculate_student_average, calculate_class_average
-from display import print_student_info, print_summary
+from modules.calculations import calculate_student_average, calculate_class_average
+from modules.display import print_student_info, print_summary
 
 
 def main() -> None:

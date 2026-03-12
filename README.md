@@ -2,10 +2,6 @@
 
 [Python 3.7+](https://www.python.org/downloads/)
 [License: MIT](https://opensource.org/licenses/MIT)
-[Code style: type hints](https://www.python.org/dev/peps/pep-0484/)
-[Standard library only](https://docs.python.org/3/library/)
-[Repo size](https://github.com/your-username/calculate)
-[Language](https://www.python.org/)
 
 A command-line Python application that computes the average of three test scores per student and the overall class average for one or more students in a single session.
 
@@ -194,7 +190,7 @@ See [PROGRAM_FLOW_DIAGRAM.md](PROGRAM_FLOW_DIAGRAM.md) for detailed flow diagram
   <summary><strong>Detailed Program Flow (Mermaid)</strong></summary>
 
 ```mermaid
-flowchart TD
+flowchart LR
     Start([Start]) --> Init[Initialize: total_averages=0, student_count=0]
     Init --> LoopStart{Process Student}
     
@@ -258,7 +254,7 @@ In developing the software for this repository, I leverage generative AI as a po
 
 ## License
 
-This project is licensed under the **MIT License**. You may add a `LICENSE` file in the repository root with the standard MIT text for full legal clarity. MIT is a permissive license that allows reuse with minimal restrictions.
+This project is licensed under the **MIT License**.
 
 ---
 

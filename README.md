@@ -194,19 +194,21 @@ flowchart LR
     PrintSummary --> End([End])
 ```
 
+
+
 ### Data Flow Between Modules
 
-| Step | Module                | Function                  | Input                  | Output                   |
-|------|-----------------------|---------------------------|------------------------|--------------------------|
-| 1    | `modules.input_utils` | `get_student_name()`      | (user input)           | first_name, middle, last |
-| 2    | `modules.input_utils` | `get_student_id()`        | (user input)           | student_id               |
-| 3    | `modules.input_utils` | `get_validated_score(n)`  | prompt number          | score (0–100)            |
-| 4    | `modules.calculations`| `calculate_student_average` | score1, score2, score3 | total, average           |
-| 5    | `modules.display`     | `print_student_info()`    | all student data       | (prints to console)      |
-| 6    | `modules.calculations`| `calculate_class_average` | total_averages, count  | class_average            |
-| 7    | `modules.input_utils` | `get_continue_choice()`   | (user input)           | True/False               |
-| 8    | `modules.display`     | `print_summary()`         | count, class_average   | (prints to console)      |
 
+| Step | Module                 | Function                    | Input                  | Output                   |
+| ---- | ---------------------- | --------------------------- | ---------------------- | ------------------------ |
+| 1    | `modules.input_utils`  | `get_student_name()`        | (user input)           | first_name, middle, last |
+| 2    | `modules.input_utils`  | `get_student_id()`          | (user input)           | student_id               |
+| 3    | `modules.input_utils`  | `get_validated_score(n)`    | prompt number          | score (0–100)            |
+| 4    | `modules.calculations` | `calculate_student_average` | score1, score2, score3 | total, average           |
+| 5    | `modules.display`      | `print_student_info()`      | all student data       | (prints to console)      |
+| 6    | `modules.calculations` | `calculate_class_average`   | total_averages, count  | class_average            |
+| 7    | `modules.input_utils`  | `get_continue_choice()`     | (user input)           | True/False               |
+| 8    | `modules.display`      | `print_summary()`           | count, class_average   | (prints to console)      |
 
 
 ## Contributing
@@ -248,6 +250,7 @@ This project is licensed under the **MIT License**.
 
 ## References & Acknowledgements
 
+- **Indentations Best Practices Citation**: [Indentations with Python](https://learn.udacity.com/nd089?version=13.0.8&partKey=cd13568&lessonKey=58044931-0630-4b80-9feb-3586c32e53d7&conceptKey=5386d06d-51e7-4dfa-a407-bbdb7bb42a45)
 - **Statement of AI Use informed by**: [Certificate in Artificial Intelligence and Career Empowerment](https://www.rhsmith.umd.edu/programs/executive-education/learning-opportunities-individuals/free-online-certificate-artificial-intelligence-and-career-empowerment), University of Maryland Robert H. Smith School of Business.
 - **Code commenting methodology informed by**: [AI Programming with Python – Commenting in Python](https://www.udacity.com/course/ai-programming-python-nanodegree--nd089), Udacity. Used as the guide for docstrings, single-line comments, and in-code documentation in this repository.
 - *This README was structured based on the principles outlined in [How to Write a Good README File for Your GitHub Project](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/) by freeCodeCamp.*
